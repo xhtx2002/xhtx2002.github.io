@@ -1,0 +1,32 @@
+<!-- recite.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>全文背诵</title>
+  <!-- 引入 Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 返回按钮 -->
+  <a href="javascript:history.back();" class="btn btn-secondary back-button">返回</a>
+
+  <div class="container">
+    <h1 id="poem-title" class="my-5 text-center">全文背诵</h1>
+    <div id="recitation" class="text-center">
+      <div id="recitation-content" class="my-5">
+        <!-- 全文背诵内容将动态添加 -->
+      </div>
+      <button id="next-sentence-btn" class="btn btn-primary">下一句</button>
+    </div>
+  </div>
+
+  <!-- 引入脚本文件 -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

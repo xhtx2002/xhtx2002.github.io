@@ -1,0 +1,144 @@
+/* styles.css */
+
+/* 全局字体设置 */
+body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  /* 标题 */
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  
+  /* 增大字体大小 */
+  #poem-content, #recitation-content p, .word-button {
+    font-size: 1.5em;
+  }
+  
+  /* 高亮显示需要记背的单词 */
+  .highlight {
+    color: #d9534f; /* 红色 */
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* 按钮样式 */
+  .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+  
+  /* 返回按钮 */
+  .back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  /* 背景图案 */
+  .bg-image {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  /* 诗词内容 */
+  #poem-content {
+    white-space: pre-wrap;
+    font-size: 1.5em;
+  }
+  
+  /* 单词学习和全文背诵区域 */
+  #word-learning,
+  #recitation {
+    margin-bottom: 50px;
+  }
+  
+  #word-buttons /* styles.css */
+
+  /* 单词按钮样式 */
+  .word-button {
+      font-size: 2em; /* 增大字体 */
+      padding: 20px 30px; /* 增大内边距 */
+      margin: 15px 0; /* 增大按钮之间的间距 */
+      width: 80%; /* 按钮宽度占据80%容器宽度 */
+      text-align: center; /* 文本居中 */
+      height: 80px; /* 设置固定高度 */
+  }
+  
+  #recitation-content p {
+    cursor: pointer;
+    font-size: 2em;
+    color: #d9534f; /* 红色 */
+    font-weight: bold;
+    margin: 50px 0;
+  }
+  
+  /* 单词释义样式 */
+  .word-meaning {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* 按钮悬停效果 */
+  #word-buttons .word-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    #poem-content,
+    #recitation-content p {
+      font-size: 1.3em;
+    }
+  
+    #word-buttons .word-button {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    #poem-content,
+    #recitation-content p {
+      font-size: 1.1em;
+    }
+  
+    #word-buttons .word-button {
+      font-size: 1.5em;
+    }
+  }
+  /* styles.css */
+
+/* 全文背诵部分的样式 */
+.full-poem {
+  font-size: 1.5em;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.current-sentence {
+  font-size: 2em;
+  color: #d9534f; /* 红色 */
+  font-weight: bold;
+  cursor: pointer;
+}
