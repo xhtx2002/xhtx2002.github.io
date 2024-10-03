@@ -1,0 +1,36 @@
+<!-- words.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>单词背诵</title>
+    <!-- 引入Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入数据文件 -->
+    <script src="data.js"></script>
+</head>
+<body>
+    <!-- 返回按钮 -->
+    <a href="javascript:history.back();" class="btn btn-secondary back-button">返回</a>
+
+    <div class="container">
+        <h1 id="poem-title" class="my-5 text-center">单词背诵</h1>
+        <div id="word-learning">
+            <!-- 单词学习区域 -->
+            <div id="word-buttons" class="d-flex flex-column align-items-center">
+                <!-- 单词按钮将动态添加 -->
+            </div>
+            <div class="text-center my-4">
+                <button onclick="nextWords()" class="btn btn-secondary">下一组单词</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入脚本文件 -->
+    <script src="script.js"></script>
+</body>
+</html>

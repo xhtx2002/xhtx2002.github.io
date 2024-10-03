@@ -1,0 +1,42 @@
+<!-- content.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>诗词学习</title>
+  <!-- 引入Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- 引入数据文件 -->
+  <script src="data.js"></script>
+</head>
+<body>
+  <!-- 返回按钮 -->
+  <a href="javascript:history.back();" class="btn btn-secondary back-button">返回</a>
+
+  <div class="container">
+    <h1 id="poem-title" class="my-5 text-center">诗词标题</h1>
+    <div id="poem-content" class="text-center mb-4"></div>
+    <div class="text-center mb-5">
+      <button id="start-word-learning" class="btn btn-primary mx-2">
+        开始单词学习
+      </button>
+      <button id="start-recitation" class="btn btn-success mx-2">
+        开始全文背诵
+      </button>
+    </div>
+  </div>
+
+  <!-- 引入脚本文件 -->
+  <script src="script.js"></script>
+  <!-- 添加脚本 -->
+  <script>
+    document.getElementById('start-word-learning').addEventListener('click', () => {
+        window.location.href = `words.html?poemId=${poemId}`;
+    });
+  </script>
+</body>
+</html>
